@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charSet="utf-8"/>
+    <meta name="theme-color" content="#000000"/>
+    <link rel="shortcut icon" href="./img/brand/favicon.ico"/>
+    <link rel="apple-touch-icon" sizes="76x76" href="./img/brand/apple-icon.png"/>
+    <meta charSet="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title>Beeline App</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+    <meta name="next-head-count" content="4"/>
+    <link rel="preload" href="./_next/static/css/7ed2b369bdc745819f4c.css" as="style"/>
+    <link rel="stylesheet" href="./_next/static/css/7ed2b369bdc745819f4c.css" data-n-g=""/>
+    <noscript data-n-css=""></noscript>
+    <link rel="preload" href="./_next/static/chunks/main-9d65b92cae829d5e8e6a.js" as="script"/>
+    <link rel="preload" href="./_next/static/chunks/webpack-50bee04d1dc61f8adf5b.js" as="script"/>
+    <link rel="preload" href="./_next/static/chunks/framework.0a9f20eff0752717cd72.js" as="script"/>
+    <link rel="preload" href="./_next/static/chunks/commons.ba5dd5ffef7d47b4bfe0.js" as="script"/>
+    <link rel="preload" href="./_next/static/chunks/pages/_app-666975a178d9b5f73815.js" as="script"/>
+    <link rel="preload" href="./_next/static/chunks/d1c92c196e5ff64c7e1e83a8f4800724b67b35ea.ae1ed2b1320d6d75550f.js"
+          as="script"/>
+    <link rel="preload" href="./_next/static/chunks/pages/index-1aed6d829da7b5ca8e82.js" as="script"/>
+</head>
+<body class="text-blueGray-700 antialiased">
+<div id="page-transition"></div>
+<div id="__next">
+    <nav class="top-0 fixed z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg bg-white shadow">
+        <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
+            <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start"><img
+                    class="text-blueGray-700 text-lg font-bold leading-relaxed inline-block mr-4 py-1 whitespace-nowrap uppercase"
+                    width="50" src="./img/bee.gif"/><a
+                    class="text-black-700 text-lg font-bold leading-relaxed inline-block mr-4 py-1 whitespace-nowrap uppercase"
+                    href="/">Beeline</a>
+                <button class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+                        type="button"><i class="fas fa-bars"></i></button>
+            </div>
+            <div class="lg:flex flex-grow items-center bg-white lg:bg-opacity-0 lg:shadow-none hidden"
+                 id="example-navbar-warning">
+                <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+                    <li class="flex items-center"><a
+                            class="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                            href="/admin/blog" target="_blank">The Buzz</a></li>
+                    <li class="flex items-center"><a
+                            class="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                            href="#pablo">Mockups</a>
+                        <div class="hidden bg-white text-base z-50 float-left py-2 list-none text-left rounded shadow-lg min-w-48">
+                            <span class="text-sm pt-2 pb-0 px-4 font-bold block w-full whitespace-nowrap bg-transparent text-blueGray-400">Admin Layout</span><a
+                                href="#pablo"
+                                class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700">Dashboard</a><a
+                                href="#pablo"
+                                class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700">Settings</a><a
+                                href="#pablo"
+                                class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700">Tables</a><a
+                                href="#pablo"
+                                class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700">Maps</a>
+                            <div class="h-0 mx-4 my-2 border border-solid border-blueGray-100"></div>
+                            <span class="text-sm pt-2 pb-0 px-4 font-bold block w-full whitespace-nowrap bg-transparent text-blueGray-400">Auth Layout</span><a
+                                href="#pablo"
+                                class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700">Login</a><a
+                                href="#pablo"
+                                class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700">Register</a>
+                            <div class="h-0 mx-4 my-2 border border-solid border-blueGray-100"></div>
+                            <span class="text-sm pt-2 pb-0 px-4 font-bold block w-full whitespace-nowrap bg-transparent text-blueGray-400">No Layout</span><a
+                                href="#pablo"
+                                class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700">Landing</a><a
+                                href="#pablo"
+                                class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700">Profile</a>
+                        </div>
+                    </li>
+                    <form class="md:flex hidden flex-row flex-wrap items-center lg:ml-auto mr-3">
+                        <div class="relative flex w-full flex-wrap items-stretch"><span
+                                class="z-10 h-full leading-snug font-normal absolute text-center text-blueGray-300 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-3 py-3"><i
+                                class="fas fa-search"></i></span><input type="text" placeholder="Scout for Beelines"
+                                                                        class="border-0 px-3 py-3 placeholder-blueGray-300 font text-lg text-red-600 relative bg-white bg-white rounded text-sm shadow outline-none focus:outline-none focus:ring w-full pl-10"/>
+                        </div>
+                    </form>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="header relative pt-16 items-center flex h-screen max-h-860-px">
+        <div class="container mx-auto items-center flex flex-wrap">
+            <div class="w-full md:w-8/12 lg:w-6/12 xl:w-6/12 px-4">
+                <div class="pt-32 sm:pt-0"><h2 class="font-semibold text-4xl text-blueGray-600">Beeline.</h2>
+                    <h3 class="font-semibold text-xl text-blueGray-400">The free, fun, and effective way to learn
+                        anything.</h3>
+                    <p class="mt-4 text-lg leading-relaxed text-blueGray-500">Beeline is the direct path to where you
+                        want to be going.<br/> We are a <strong>science-backed</strong> learning platform designed to
+                        remove barriers to effective learning, <strong>for everyone.</strong></p>
+                    <div class="mt-12"><a target="_blank"
+                                          class="cursor-pointer text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-bee-dark active:bg-amber-500 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150">Start
+                        Beekeeping</a></div>
+                </div>
+            </div>
+        </div>
+        <img class="absolute top-0 b-auto right-0 pt-16 sm:w-6/12 -mt-48 sm:mt-0 w-10/12 max-h-860-px"
+             src="./img/beeline-bg.png" alt="..."/></section>
+    <section class="mt-48 md:mt-40 pb-40 relative bg-bee-light">
+        <div class="-mt-20 top-0 bottom-auto left-0 right-0 w-full absolute h-20" style="transform:translateZ(0)">
+            <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+                 version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+                <polygon class="text-bee-light fill-current" points="2560 0 2560 100 0 100"></polygon>
+            </svg>
+        </div>
+        <div class="container mx-auto">
+            <div class="flex flex-wrap items-center">
+                <div class="w-10/12 md:w-6/12 lg:w-4/12 px-12 md:px-4 mr-auto ml-auto -mt-32">
+                    <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-bee-dark">
+                        <img alt="..."
+                             src="https://images.unsplash.com/photo-1626285094816-39f688104ce0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1974&amp;q=80"
+                             class="w-full align-middle rounded-t-lg"/>
+                        <blockquote class="relative p-8 mb-4">
+                            <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95"
+                                 class="absolute left-0 w-full block h-95-px -top-94-px">
+                                <polygon points="-30,95 583,95 583,65" class="text-bee-dark fill-current"></polygon>
+                            </svg>
+                            <h4 class="text-xl font-bold text-white">Trending Beelines</h4></blockquote>
+                    </div>
+                </div>
+                <div class="w-full md:w-6/12 px-4">
+                    <div class="flex flex-wrap py-1">
+                        <div class="py-1 w-full">
+                            <div class=" w-full lg:max-w-full lg:flex">
+                                <div class="border-r border-b border-l border-gray-400 lg:border-l-0 w-full bg-white rounded-2xl p-4 flex flex-col justify-between leading-normal">
+                                    <div class="mb-8">
+                                        <p class="text-sm text-gray-600 flex items-center">
+                                            <svg class="fill-current text-gray-500 w-3 h-2 mr-2"
+                                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                                <path d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z"></path>
+                                            </svg>
+                                            Members Only
+                                        </p>
+                                        <div class="text-gray-900 font-bold text-xl mb-1">How to Move from Note-Taking
+                                            to Note-Making Using a Zettelkasten
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-between"><span class="inline-flex"><img
+                                            class="w-10 h-10 rounded-full mr-4" src="./img/examplePostData/1.jpeg"
+                                            alt="Avatar of Writer"/><div class="text-sm"><p
+                                            class="text-gray-900 leading-none">Peter Turner</p><p class="text-gray-600">Jan 2020</p></div></span><a
+                                            target="_blank"
+                                            class="flex self-end cursor-pointer text-white font-bold px-2 py-2 rounded outline-none focus:outline-none bg-bee active:bg-bee-dark uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150">Investigate</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-1 w-full">
+                            <div class=" w-full lg:max-w-full lg:flex">
+                                <div class="border-r border-b border-l border-gray-400 lg:border-l-0 w-full bg-white rounded-2xl p-4 flex flex-col justify-between leading-normal">
+                                    <div class="mb-8">
+                                        <p class="text-sm text-gray-600 flex items-center">
+                                            <svg class="fill-current text-gray-500 w-3 h-2 mr-2"
+                                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                                <path d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z"></path>
+                                            </svg>
+                                            Members Only
+                                        </p>
+                                        <div class="text-gray-900 font-bold text-xl mb-1">7 Habits of a Renaissance Man:
+                                            Learning How to Learn from Leonardo da Vinci
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-between"><span class="inline-flex"><img
+                                            class="w-10 h-10 rounded-full mr-4" src="./img/examplePostData/2.jpg"
+                                            alt="Avatar of Writer"/><div class="text-sm"><p
+                                            class="text-gray-900 leading-none">Peter Turner</p><p class="text-gray-600">Jan 2020</p></div></span><a
+                                            target="_blank"
+                                            class="flex self-end cursor-pointer text-white font-bold px-2 py-2 rounded outline-none focus:outline-none bg-bee active:bg-bee-dark uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150">Investigate</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-1 w-full">
+                            <div class=" w-full lg:max-w-full lg:flex">
+                                <div class="border-r border-b border-l border-gray-400 lg:border-l-0 w-full bg-white rounded-2xl p-4 flex flex-col justify-between leading-normal">
+                                    <div class="mb-8">
+                                        <p class="text-sm text-gray-600 flex items-center">
+                                            <svg class="fill-current text-gray-500 w-3 h-2 mr-2"
+                                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                                <path d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z"></path>
+                                            </svg>
+                                            Members Only
+                                        </p>
+                                        <div class="text-gray-900 font-bold text-xl mb-1">The Easiest Languages to Learn
+                                            for Native English Speakers
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-between"><span class="inline-flex"><img
+                                            class="w-10 h-10 rounded-full mr-4" src="./img/examplePostData/3.jpeg"
+                                            alt="Avatar of Writer"/><div class="text-sm"><p
+                                            class="text-gray-900 leading-none">Peter Turner</p><p class="text-gray-600">Jan 2020</p></div></span><a
+                                            target="_blank"
+                                            class="flex self-end cursor-pointer text-white font-bold px-2 py-2 rounded outline-none focus:outline-none bg-bee active:bg-bee-dark uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150">Investigate</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-1 w-full">
+                            <div class=" w-full lg:max-w-full lg:flex">
+                                <div class="border-r border-b border-l border-gray-400 lg:border-l-0 w-full bg-white rounded-2xl p-4 flex flex-col justify-between leading-normal">
+                                    <div class="mb-8">
+                                        <p class="text-sm text-gray-600 flex items-center">
+                                            <svg class="fill-current text-gray-500 w-3 h-2 mr-2"
+                                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                                <path d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z"></path>
+                                            </svg>
+                                            Members Only
+                                        </p>
+                                        <div class="text-gray-900 font-bold text-xl mb-1">7 Awful Tips About Language
+                                            Learning You Should Never Follow
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-between"><span class="inline-flex"><img
+                                            class="w-10 h-10 rounded-full mr-4" src="./img/examplePostData/4.jpeg"
+                                            alt="Avatar of Writer"/><div class="text-sm"><p
+                                            class="text-gray-900 leading-none">Peter Turner</p><p class="text-gray-600">Jan 2020</p></div></span><a
+                                            target="_blank"
+                                            class="flex self-end cursor-pointer text-white font-bold px-2 py-2 rounded outline-none focus:outline-none bg-bee active:bg-bee-dark uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150">Investigate</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-20 bg-white overflow-hidden">
+        <div class="container mx-auto pb-64">
+            <div class="flex flex-wrap justify-center">
+                <div class="container max-w-xl m-auto flex flex-wrap flex-col md:flex-row items-center justify-start">
+                    <div class="w-full lg:w-full p-3">
+                        <div class="flex flex-col lg:flex-row rounded overflow-hidden h-auto lg:h-32 border shadow shadow-lg">
+                            <div class="bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+                                <div class="text-black font-bold text-xl leading-tight">How to Move from Note-Taking to
+                                    Note-Making Using a Zettelkasten
+                                </div>
+                                <div class="text-gray-600 font-semibold text-md-start mb-2 leading-tight">You find the
+                                    most valuable insights…
+                                </div>
+                                <p class="text-grey-darker text-base cursor-pointer"><a target="_blank"
+                                                                                        href="https://medium.com/skilluped/how-to-move-from-note-taking-to-note-making-using-a-zettelkasten-266af2748262">Read
+                                    more</a></p></div>
+                            <img class="block h-auto w-full lg:w-48 flex-none bg-cover object-cover"
+                                 src="./img/examplePostData/1.jpeg"/></div>
+                    </div>
+                    <div class="w-full lg:w-full p-3">
+                        <div class="flex flex-col lg:flex-row rounded overflow-hidden h-auto lg:h-32 border shadow shadow-lg">
+                            <div class="bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+                                <div class="text-black font-bold text-xl leading-tight">7 Habits of a Renaissance Man:
+                                    Learning How to Learn from Leonardo da Vinci
+                                </div>
+                                <div class="text-gray-600 font-semibold text-md-start mb-2 leading-tight">Adopt these
+                                    habits to…
+                                </div>
+                                <p class="text-grey-darker text-base cursor-pointer"><a target="_blank"
+                                                                                        href="https://medium.com/skilluped/7-habits-of-a-renaissance-man-learning-how-to-learn-from-leonardo-da-vinci-3db7abf99fb3">Read
+                                    more</a></p></div>
+                            <img class="block h-auto w-full lg:w-48 flex-none bg-cover object-cover"
+                                 src="./img/examplePostData/2.jpg"/></div>
+                    </div>
+                    <div class="w-full lg:w-full p-3">
+                        <div class="flex flex-col lg:flex-row rounded overflow-hidden h-auto lg:h-32 border shadow shadow-lg">
+                            <div class="bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+                                <div class="text-black font-bold text-xl leading-tight">The Easiest Languages to Learn
+                                    for Native English Speakers
+                                </div>
+                                <div class="text-gray-600 font-semibold text-md-start mb-2 leading-tight">Nine of the
+                                    easiest languages you can…
+                                </div>
+                                <p class="text-grey-darker text-base cursor-pointer"><a target="_blank"
+                                                                                        href="https://medium.com/skilluped/the-easiest-languages-to-learn-for-native-english-speakers-b9c4c372bb7d">Read
+                                    more</a></p></div>
+                            <img class="block h-auto w-full lg:w-48 flex-none bg-cover object-cover"
+                                 src="./img/examplePostData/3.jpeg"/></div>
+                    </div>
+                    <div class="w-full lg:w-full p-3">
+                        <div class="flex flex-col lg:flex-row rounded overflow-hidden h-auto lg:h-32 border shadow shadow-lg">
+                            <div class="bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+                                <div class="text-black font-bold text-xl leading-tight">7 Awful Tips About Language
+                                    Learning You Should Never Follow
+                                </div>
+                                <div class="text-gray-600 font-semibold text-md-start mb-2 leading-tight">If you want to
+                                    keep improving
+                                </div>
+                                <p class="text-grey-darker text-base cursor-pointer"><a target="_blank"
+                                                                                        href="https://medium.com/skilluped/7-awful-tips-about-language-learning-you-should-never-follow-c6524ec6ea96">Read
+                                    more</a></p></div>
+                            <img class="block h-auto w-full lg:w-48 flex-none bg-cover object-cover"
+                                 src="./img/examplePostData/4.jpeg"/></div>
+                    </div>
+                    <div class="w-full lg:w-full p-3">
+                        <div class="flex flex-col lg:flex-row rounded overflow-hidden h-auto lg:h-32 border shadow shadow-lg">
+                            <div class="bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+                                <div class="text-black font-bold text-xl leading-tight">10 Essential Skills to Develop
+                                    in 2021
+                                </div>
+                                <div class="text-gray-600 font-semibold text-md-start mb-2 leading-tight">#2 An
+                                    adaptive mindset
+                                </div>
+                                <p class="text-grey-darker text-base cursor-pointer"><a target="_blank"
+                                                                                        href="https://medium.com/skilluped/10-essential-skills-to-develop-in-2021-ab3983f0dc83">Read
+                                    more</a></p></div>
+                            <img class="block h-auto w-full lg:w-48 flex-none bg-cover object-cover"
+                                 src="./img/examplePostData/5.jpeg"/></div>
+                    </div>
+                </div>
+                <div class="w-full md:w-4/12 px-4 mr-auto ml-auto relative"><h3
+                        class="text-xl font-semibold mt-4 text-gray-600">Discover more of what matters to you</h3>
+                    <div class="container py-3"><span
+                            class="cursor-pointer text-sm font-semibold inline-block py-1 px-2 uppercase rounded text-yellow-800 bg-bee uppercase last:mr-1 mr-2 mb-1 hover:shadow-lg ease-linear transition-all duration-150">Self</span><span
+                            class="cursor-pointer text-sm font-semibold inline-block py-1 px-2 uppercase rounded text-yellow-800 bg-bee uppercase last:mr-1 mr-2 mb-1 hover:shadow-lg ease-linear transition-all duration-150">Relationships</span><span
+                            class="cursor-pointer text-sm font-semibold inline-block py-1 px-2 uppercase rounded text-yellow-800 bg-bee uppercase last:mr-1 mr-2 mb-1 hover:shadow-lg ease-linear transition-all duration-150">History</span><span
+                            class="cursor-pointer text-sm font-semibold inline-block py-1 px-2 uppercase rounded text-yellow-800 bg-bee uppercase last:mr-1 mr-2 mb-1 hover:shadow-lg ease-linear transition-all duration-150">Productivity</span><span
+                            class="cursor-pointer text-sm font-semibold inline-block py-1 px-2 uppercase rounded text-yellow-800 bg-bee uppercase last:mr-1 mr-2 mb-1 hover:shadow-lg ease-linear transition-all duration-150">Programming</span><span
+                            class="cursor-pointer text-sm font-semibold inline-block py-1 px-2 uppercase rounded text-yellow-800 bg-bee uppercase last:mr-1 mr-2 mb-1 hover:shadow-lg ease-linear transition-all duration-150">Machine Learning</span><span
+                            class="cursor-pointer text-sm font-semibold inline-block py-1 px-2 uppercase rounded text-yellow-800 bg-bee uppercase last:mr-1 mr-2 mb-1 hover:shadow-lg ease-linear transition-all duration-150">Politics</span><span
+                            class="cursor-pointer text-sm font-semibold inline-block py-1 px-2 uppercase rounded text-yellow-800 bg-bee uppercase last:mr-1 mr-2 hover:shadow-lg ease-linear transition-all duration-150">Literature</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pb-20 relative block bg-yellow-800">
+        <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-20"
+             style="transform:translateZ(0)">
+            <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+                 version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+                <polygon class="text-yellow-800 fill-current" points="2560 0 2560 100 0 100"></polygon>
+            </svg>
+        </div>
+        <div class="container mx-auto px-4 lg:pt-24 lg:pb-64">
+            <div class="flex flex-wrap text-center justify-center">
+                <div class="w-full lg:w-6/12 px-4"><h2 class="text-4xl font-semibold text-white">Your future is a hive.
+                    Build something.</h2>
+                    <p class="text-lg leading-relaxed mt-4 mb-4 text-yellow-400">Life is too short to learn
+                        inefficiently, Beeline helps you to do the opposite.</p></div>
+            </div>
+            <div class="flex flex-wrap mt-12 justify-center">
+                <div class="w-full lg:w-3/12 px-4 text-center">
+                    <div class="text-yellow-800 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
+                        <i class="fas fa-code text-xl"></i></div>
+                    <h6 class="text-xl mt-5 font-semibold text-white">Modern Technology</h6>
+                    <p class="mt-2 mb-4 text-yellow-400">Designed with the most cutting edge technology, the Beeline
+                        platform is made for learners with deadlines.</p></div>
+                <div class="w-full lg:w-3/12 px-4 text-center">
+                    <div class="text-yellow-800 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
+                        <i class="fas fa-atom text-xl"></i></div>
+                    <h5 class="text-xl mt-5 font-semibold text-white">Science-backed tooling</h5>
+                    <p class="mt-2 mb-4 text-yellow-400">Our learning tools are developed with inputs from the very best
+                        in the field of learning engineering.</p></div>
+                <div class="w-full lg:w-3/12 px-4 text-center">
+                    <div class="text-yellow-800 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
+                        <i class="fas fa-map-marker-alt text-xl"></i></div>
+                    <h5 class="text-xl mt-5 font-semibold text-white">Available anywhere</h5>
+                    <p class="mt-2 mb-4 text-yellow-400">To make our platform available to those who need it most, we
+                        have built it with offline functionality.</p></div>
+            </div>
+        </div>
+    </section>
+    <section class="relative block py-24 lg:pt-0 bg-yellow-800">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-center lg:-mt-64 -mt-48">
+                <div class="w-full lg:w-6/12 px-4">
+                    <div class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-bee-light">
+                        <div class="flex-auto p-5 lg:p-10"><h4 class="text-2xl font-semibold">Want to be an early
+                            bee?</h4>
+                            <p class="leading-relaxed mt-1 mb-4 text-yellow-800">Complete this form and we will keep you
+                                in the know.</p>
+                            <div class="relative w-full mb-3 mt-8"><label
+                                    class="block uppercase text-yellow-900 text-xs font-bold mb-2" for="full-name">Full
+                                Name</label><input type="text"
+                                                   class="border-0 px-3 py-3 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                                                   placeholder="Full Name"/></div>
+                            <div class="relative w-full mb-3"><label
+                                    class="block uppercase text-yellow-800 text-xs font-bold mb-2"
+                                    for="email">Email</label><input type="email"
+                                                                    class="border-0 px-3 py-3 placeholder-yellow-800 text-yellow-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                                                                    placeholder="Email"/></div>
+                            <div class="text-center mt-6">
+                                <button class="bg-yellow-800 text-white active:bg-yellow-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                                        type="button">I&#x27;d Like to BEE in the loop.
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="relative bg-bee-light pt-8 pb-6">
+        <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-20"
+             style="transform:translateZ(0)">
+            <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+                 version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+                <polygon class="text-bee-light fill-current" points="2560 0 2560 100 0 100"></polygon>
+            </svg>
+        </div>
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap text-center lg:text-left">
+                <div class="w-full lg:w-6/12 px-4"><h4 class="text-3xl font-semibold">Give us a buzz!</h4><h5
+                        class="text-lg mt-0 mb-2 text-blueGray-600">Find us on any of these platforms, we respond in 2-4
+                    business days.</h5>
+                    <div class="mt-6 lg:mb-0 mb-6">
+                        <button class="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                                type="button"><i class="fab fa-twitter"></i></button>
+                        <button class="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                                type="button"><i class="fab fa-facebook-square"></i></button>
+                        <button class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                                type="button"><i class="fab fa-dribbble"></i></button>
+                        <button class="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                                type="button"><i class="fab fa-github"></i></button>
+                    </div>
+                </div>
+                <div class="w-full lg:w-6/12 px-4">
+                    <div class="flex flex-wrap items-top mb-6">
+                        <div class="w-full lg:w-4/12 px-4 ml-auto"><span
+                                class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">Useful Links</span>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                                       href="https://www.creative-tim.com/presentation?ref=nnjs-footer">About Us</a>
+                                </li>
+                                <li>
+                                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                                       href="https://blog.creative-tim.com?ref=nnjs-footer">The Buzz</a></li>
+                                <li>
+                                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                                       href="https://www.github.com/creativetimofficial?ref=nnjs-footer">Open Source</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="w-full lg:w-4/12 px-4"><span
+                                class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">Other Resources</span>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                                       href="https://github.com/creativetimofficial/notus-nextjs/blob/main/LICENSE.md?ref=nnjs-footer">MIT
+                                        License</a></li>
+                                <li>
+                                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                                       href="https://creative-tim.com/terms?ref=nnjs-footer">Terms &amp; Conditions</a>
+                                </li>
+                                <li>
+                                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                                       href="https://creative-tim.com/privacy?ref=nnjs-footer">Privacy Policy</a></li>
+                                <li>
+                                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                                       href="https://creative-tim.com/contact-us?ref=nnjs-footer">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-6 border-blueGray-300"/>
+            <div class="flex flex-wrap items-center md:justify-between justify-center">
+                <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+                    <div class="text-sm text-blueGray-500 font-semibold py-1">Copyright © <!-- -->2021<!-- --> <a
+                            href="https://www.creative-tim.com?ref=nnjs-footer"
+                            class="text-blueGray-500 hover:text-blueGray-800">Beeline</a>.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{}},"page":"/","query":{},"buildId":"vbRxc_AGwM1mfCVzmPKYP","nextExport":true,"isFallback":false,"appGip":true}</script>
+<script nomodule="" src="/_next/static/chunks/polyfills-0144d5b481bf411d4a2c.js"></script>
+<script src="/_next/static/chunks/main-9d65b92cae829d5e8e6a.js" async=""></script>
+<script src="/_next/static/chunks/webpack-50bee04d1dc61f8adf5b.js" async=""></script>
+<script src="/_next/static/chunks/framework.0a9f20eff0752717cd72.js" async=""></script>
+<script src="/_next/static/chunks/commons.ba5dd5ffef7d47b4bfe0.js" async=""></script>
+<script src="/_next/static/chunks/pages/_app-666975a178d9b5f73815.js" async=""></script>
+<script src="/_next/static/chunks/d1c92c196e5ff64c7e1e83a8f4800724b67b35ea.ae1ed2b1320d6d75550f.js" async=""></script>
+<script src="/_next/static/chunks/pages/index-1aed6d829da7b5ca8e82.js" async=""></script>
+<script src="/_next/static/vbRxc_AGwM1mfCVzmPKYP/_buildManifest.js" async=""></script>
+<script src="/_next/static/vbRxc_AGwM1mfCVzmPKYP/_ssgManifest.js" async=""></script>
+</body>
+</html>
